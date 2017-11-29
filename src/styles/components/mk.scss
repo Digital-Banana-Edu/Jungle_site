@@ -1,0 +1,42 @@
+.mk {
+  li {
+    position: relative;
+    margin: 0 auto 40px;
+    padding: 40px 20px 20px;
+    border-radius: 25px;
+    width: 600px;
+    text-align: left;
+    background-color: white;
+    box-shadow: 0px 1px 2px 0px rgba(0,0,0,0.26);
+
+    .schedule_time {
+      margin-bottom: 20px;
+    }
+  }
+
+  &-logo {
+    float: left;
+
+    img {
+      margin-top: 20%;
+      width: 170px;
+    }
+  }
+
+  &-title {
+    margin-bottom: 20px;
+    padding-left: 200px;
+    font-size: 26px;
+    color: $violet;
+    font-weight: 900;
+  }
+
+  &-desc {
+    padding-left: 200px;
+  }
+
+  &-timelime {
+    position: absolute;
+    
+  }
+}

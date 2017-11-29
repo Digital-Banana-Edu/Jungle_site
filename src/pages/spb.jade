@@ -1,0 +1,311 @@
+extends ./layout/city_layout.jade
+
+block title
+  title Цифровые Джунгли 19 марта в Петербурге
+
+block header_content
+  .header_info
+    h3
+      | 19 марта 
+      span 11:00-19:00
+    h3.underline.spb Санкт-Петербург, Медиков, д. 3
+    .header_desc.header_desc_min Бесплатный вход по предварительной регистрации
+    a.btn(href="https://bananaschool.timepad.ru/event/423421/") Зарегистрироваться
+    .header_desc.header_desc_min Количество мест ограничено
+  a.btn_scroll_down.ga_spb_timepad(href="#about")
+    img(src="../assets/scroll_down.svg")
+
+block speakers
+  .programm-holder.is-visible
+    h2 Программа лекций первого потока
+    .schedule
+      .schedule_item.hollow
+          .schedule_title Начало мероприятия
+          .schedule-time 10:30
+      .schedule_item
+        .schedule_photo.schedule_pic.schedule_pic
+          img(src="./assets/spb-lapin.jpg")
+        .schedule_name Вячеслав Лапин
+        .schedule_who Старший инженер-Разработчик Java в EPAM Systems. 
+        .schedule_theme Рынок цифровых профессий сегодня и в ближайшем будущем 
+        .schedule-time 11:30
+      .schedule_item
+        .schedule_photo.schedule_pic
+          img(src="./assets/spb-grinev.jpg")
+        .schedule_name Сергей Гринёв
+        .schedule_who Ведущий инженер-программист компании Azul Systems
+        .schedule_theme Языки программирования - практический аспект
+        .schedule-time 12:15
+      .schedule_item
+        .schedule_photo.schedule_pic
+          img(src="./assets/spb-razin.jpg")
+        .schedule_name Максим Разин
+        .schedule_who Менеджер по маркетингу ASUS
+        .schedule_theme Эволюция компьютерного железа: с чего все начиналось и к чему мы идём
+        .schedule-time 13:00
+
+      .schedule_item.hollow
+        .schedule_title Перерыв
+        .schedule-time.schedule-time_hollow 13:45
+
+      .schedule_item
+        .schedule_photo.schedule_pic
+          img(src="./assets/spb-denisov.jpg")
+        .schedule_name Никита Денисов
+        .schedule_who Старший гейм-дизайнер, Wargaming St Petersburg
+        .schedule_theme Гейм-дизайн среди профессий игровой индустрии
+        .schedule-time 14:15
+      .schedule_item
+        .schedule_photo.schedule_pic
+          img(src="./assets/spb-mavchun.jpg")
+        .schedule_name Георгий Мавчун
+        .schedule_who Руководитель филиала DSX Technologies
+        .schedule_theme BlockChain — технология, которая уже сейчас меняет наш мир
+        .schedule-time 15:00
+      .schedule_item
+        .schedule_photo.schedule_pic
+          img(src="./assets/spb-slasheva.jpg")
+        .schedule_name Марина Слащева
+        .schedule_who Выпускница Института Биоинформатики
+        .schedule_theme Зачем программисту знать биологию?
+        .schedule-time 15:45
+
+      .schedule_item.hollow
+        .schedule_title Перерыв
+        .schedule-time.schedule-time_hollow 16:30
+
+      .schedule_item
+        .schedule_photo.schedule_pic
+          img(src="./assets/spb-civarev.jpg")
+        .schedule_name Антон Циварев
+        .schedule_who Разработчик API в VK.com
+        .schedule_theme Как построить карьеру программиста и попасть в ВК
+        .schedule-time 16:45
+      .schedule_item
+        .schedule_photo.schedule_pic
+          img(src="./assets/spb-silinskaya.jpg")
+        .schedule_name Елена Силинская
+        .schedule_who Директор по развитию стартап-акселератора IDealMachine
+        .schedule_theme Стартаперы до 18 лет: как создать свой собственный проект еще в школе?
+        .schedule-time 17:30
+      .schedule_item
+        .schedule_photo.schedule_pic
+          img(src="./assets/spb-bojko.jpg")
+        .schedule_name Дмитрий Божко
+        .schedule_who Исследователь Jet Brains Research
+        .schedule_theme ИИ и нейробиология: зачем мы изучаем работу мозга?
+        .schedule-time 18:15
+
+  .programm-holder
+    h2 Программа Мастер-классов
+    .schedule
+      .schedule_item.hollow
+        .schedule_title Начало мероприятия
+        .schedule-time 10:30
+
+      .schedule_item
+        .schedule_photo.schedule_pic.no-before
+          img(src="./assets/spb-unity1.jpg")
+        .schedule_theme Моделирование игровых объектов в 3D Studio Max
+        .schedule_name Количество участников: 20 человек + 20 зрителей
+        .schedule_who 3D специалисты очень востребованы в самых разных сферах. За время мастер-класса участники познакомятся с интерфейсом программы, а также узнают, как создать игрового персонажа.
+        .schedule-time 11:00
+
+      .schedule_item
+        .schedule_photo.schedule_pic.no-before
+          img(src="./assets/spb-mobile.jpg")
+        .schedule_theme Создание мобильного приложения под Android
+        .schedule_name Количество участников: 20 человек + 20 зрителей.
+        .schedule_who Разработка мобильных приложений — сложный и интересный процесс. На мастер-классе профессиональный разработчик покажет ребятам, как за час можно создать небольшое приложение на языке Java под мобильную операционную систему Android.
+        .schedule-time 12:00
+
+      .schedule_item
+        .schedule_photo.schedule_pic.no-before
+          img(src="./assets/spb-unity2.png")
+        .schedule_theme Создание уровня в Unity 3D
+        .schedule_name Количество участников: 20 человек + 20 зрителей.
+        .schedule_who Unity — среда, в которой можно начать создавать игровые проекты дома уже сейчас. Indie-разработчик Александр Хорошавин покажет, как создать небольшую локацию и научатся писать первые скрипты на языке C#
+        .schedule-time 13:00
+
+      .schedule_item
+        .schedule_photo.schedule_pic.no-before
+          img(src="./assets/spb-asus.jpg")
+        .schedule_theme Cобрать свой компьютер
+        .schedule_name Количество участников: 2 запуска по 10 человек
+        .schedule_who Под руководством специалиста из ASUS 4 команды по 5 человек собирут полностью рабочий компьютер с нуля. Особенно полезным мастер-класс будет для тех, кто называет системный блок процессором. В конце участников ждут призы от ASUS. 
+        .schedule-time 14:30
+
+      .schedule_item
+        .schedule_photo.schedule_pic.no-before
+          img(src="./assets/spb-2d.png")
+        .schedule_theme Создание 2D игр на Construct2
+        .schedule_name Количество участников: 20 человек + 20 зрителей
+        .schedule_who Игровая индустрия началась с 2D. Сейчас — это самый простой способ начать создавать свои проекты. За час ребята узнаюь, как создаются свои первые платфрмеры с препятствиями и переходом на второй уровень.
+        .schedule-time 16:30
+
+  .programm-holder
+    h2 Компании участники выставки
+    .participants
+      .participants-row
+        a(target="_blank" href="https://www.asus.com/ru/")
+          img(src="../assets/logo-asus.png")
+        //- a(target="_blank" href="https://www.microsoft.com/ru-ru/")  
+        //-   img(src="../assets/logo-microsoft.png")
+        a(target="_blank" href="http://hpmd.ru/")  
+          img(src="../assets/logo-hm.png")
+        a(target="_blank" href="https://www.esetnod32.ru")
+          img(src="../assets/msk-logo-eset.png")
+        a(target="_blank" href="https://vk.com/algotica")  
+          img(src="../assets/logo-algotica.png")
+        a(target="_blank" href="http://nextgis.ru")  
+          img(src="../assets/logo-nextgis.svg")
+      .participants-row
+        a(target="_blank" href="http://bioinformaticsinstitute.ru/")  
+          img(src="../assets/logo-bioinstitute.png")
+        a(target="_blank" href="http://retrotechsquad.ru")
+          img(src="../assets/logo-rts.png" width="120px" style="margin-right:20px")
+        a(target="_blank" href="https://vk.com/ovivo_game")  
+          img(src="../assets/logo-izhard.png")
+        a(target="_blank" href="https://vk.com/paperknight")  
+          img(src="../assets/logo-paper.png")
+        a(target="_blank" href="http://wacom.ru")  
+          img(src="../assets/logo-wacom.png")
+      .participants-row
+        
+        a(target="_blank" href="http://www.idealmachine.ru")  
+          img(src="../assets/machine-logo.png" )
+        a(target="_blank" href="http://zillionwhales.com")  
+          img(src="../assets/logo-zillion.png" )
+        a(target="_blank" href="http://harbordigital.pro")  
+            img(src="../assets/logo-harbour.png")
+        a(target="_blank" href="https://htmlacademy.ru/")  
+          img(src="../assets/logo-academy.png")
+        a(target="_blank" href="https://research.jetbrains.org/groups/biological-cellular-neural-network-modeling")  
+          img(src="../assets/logo-bozhko.png")
+
+      .participants-row
+        
+        a(target="_blank" href="https://vk.com/vortexgame")  
+          img(src="../assets/logo-vortex.png" )
+        a(target="_blank" href="http://www.ef.ru")  
+          img(src="../assets/logo-ef.png" )
+
+        a(target="_blank" href="http://hh.ru")  
+            img(src="../assets/logo-hh.png")
+        a(target="_blank" href="https://vk.com/olimp_union")  
+          img(src="../assets/logo-olimp.png")
+        a(target="_blank" href="https://steamcommunity.com/sharedfiles/filedetails/?id=764804251")  
+          img(src="../assets/logo-volts.png")
+
+      .participants-row
+        
+        a(target="_blank" href="http://fablab.spbstu.ru/ru_RU/")  
+          img(src="../assets/msk-logo-fablab.png" width="80")
+        a(target="_blank" href="http://www.umi-cms.ru")  
+          img(src="../assets/logo-umi.png" )
+
+        a(target="_blank" href="https://vk.com/out_drive")  
+            img(src="../assets/logo-outdrive.png")
+        a(target="_blank" href="http://www.steampanic.com")  
+          img(src="../assets/logo-steam.png")
+        //- a(target="_blank" href="https://steamcommunity.com/sharedfiles/filedetails/?id=764804251")  
+        //-   img(src="../assets/logo-volts.png")
+
+
+
+
+block lfk
+  .partners
+    .partners-row
+      .partner.org
+        h2 Организатор мероприятия
+        a.partner-logo(href="http://digital-banana.ru/")
+          img(src="./assets/logo-banana-main.png")
+        
+    .partners-row
+
+      .partner.main
+        a.partner-logo(href="https://www.asus.com/ru/")
+          img(src="./assets/logo-asus.png")
+        .partner-title Официальный партнёр
+      .partner.main
+        a.partner-logo(href="https://www.facebook.com/tboilspb/?fref=ts")
+          img(src="./assets/logo-tochka.png")
+        .partner-title Площадка проведения
+      .partner.main
+        a.partner-logo(href="https://comfortel.pro")
+          img(src="./assets/logo-komfortel.png")
+        .partner-title WiFi партнёр    
+  
+      .partner.main
+        a.partner-logo(href="https://www.ef.ru")
+          img(src="./assets/logo-ef.png" style="width: 90px")
+        .partner-title Эксклюзивный партнёр выставки
+
+    .partners-row.little
+      h2 Информационные партнёры
+
+      .partner
+        a.partner-logo(href="http://mel.fm")
+          img(src="./assets/logo-mel.png")
+        .partner-title Генеральный инфопартнёр
+
+      .partner
+        a.partner-logo(href="http://kudago.com/spb/")
+          img(src="./assets/logo-kudago.png")
+        .partner-title Продвижение в интернете
+
+      .partner
+        a.partner-logo(href="http://hh.ru")
+          img(src="./assets/logo-hh.png")
+        .partner-title Генеральный интернет-партнёр
+
+    .partners-row
+      .partner.popup
+        a.partner-logo(href="https://vk.com/prima_aqua")
+          img(src="./assets/logo-prima.png")
+        //- .partner-title.hidden Генеральный интернет-партнёр
+
+    .partners-row.little
+
+      .partner
+        a.partner-logo(href="http://timepad.ru")
+          img(src="./assets/logo-timepad.png")
+
+      .partner
+        a.partner-logo(href="http://aiesec.ru")
+          img(src="./assets/logo-aiesec.png")
+
+      .partner
+        a.partner-logo(href="https://littleone.ru")
+          img(src="./assets/logo-little.png")
+
+      .partner
+        a.partner-logo(href="https://dnevnik.ru")
+          img(src="./assets/logo-diary.png")
+
+      .partner
+        a.partner-logo(href="http://apeterburg.com")
+          img(src="./assets/logo-aspb.jpg")
+
+    .partners-row
+
+      .partner
+        a.partner-logo(href="http://www.peterburg.ru")
+          img(src="./assets/logo-wave.png")
+
+      .partner
+        a.partner-logo(href="http://www.vashdosug.ru")
+          img(src="./assets/logo-dosug.png")
+
+      .partner
+        a.partner-logo(href="https://kuda-spb.ru")
+          img(src="./assets/logo-kudaspb.png")
+
+      .partner
+        a.partner-logo(href="http://ponedelnikmag.com")
+          img(src="./assets/logo-ponedelnik.png")
+
+      .partner
+        a.partner-logo(href="https://vse-kursy.com")
+          img(src="./assets/logo-allcourses.png")

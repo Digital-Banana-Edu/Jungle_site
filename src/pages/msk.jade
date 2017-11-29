@@ -1,0 +1,637 @@
+extends ./layout/city_layout.jade
+
+block title
+  title Цифровые Джунгли 26 февраля в Москве
+
+block header_content
+  .header_info
+    h3
+      | 26 февраля 
+      span 11:00-19:00
+    h3.underline.msk Москва, Ленинский проспект, д. 4
+    .header_desc.header_desc_min Бесплатный вход по предварительной регистрации
+    a.btn.red Регистрация на мероприятие закрыта
+  a.btn_scroll_down.ga_msk_timepad(href="#about")
+    img(src="../assets/scroll_down.svg")
+
+  .contest
+    .contest_pic
+      img(src="./assets/video-card.png")
+      .contest_buble
+        .contest_title Участвуюй в конкурсе от ASUS
+        .contest_desc Приходи на мероприятие и выиграй топовую игровую видеокарту. 
+          a(href="https://vk.com/digitaljungle?w=wall-99588559_1659") Подробности по ссылке.
+
+block speakers
+  .programm-holder.is-visible
+    h2 Программа лекций первого потока
+    .schedule
+      .schedule_item.hollow
+        .schedule_title Начало мероприятия
+        .schedule-time 10:30
+      .schedule_item
+        .schedule_photo.schedule_pic
+          img(src="./assets/msk-malishin.jpg")
+        .schedule_name Иван Малышин
+        .schedule_who Менеджер образовательных программ 1С-битрикс
+        .schedule_theme Как выбрать профессию будущего?
+        .schedule-time 11:30
+      .schedule_item
+        .schedule_photo.schedule_pic
+          img(src="./assets/spb-razin.jpg")
+        .schedule_name Максим Разин
+        .schedule_who Менеджер по маркетингу ASUS
+        .schedule_theme Эволюция компьютерного железа: с чего все начиналось и к чему мы идём
+        .schedule-time 12:15
+      .schedule_item
+        .schedule_photo.schedule_pic
+          img(src="./assets/msk-makeenok.jpg")
+        .schedule_name Анастасия Макеенок
+        .schedule_who Student Audience Marketing Manager в Microsoft
+        .schedule_theme Облачные технологии и глобализация интернет пространства
+        .schedule-time 13:00
+
+      .schedule_item.hollow
+        .schedule_title Перерыв
+        .schedule-time.schedule-time_hollow 13:45
+
+      .schedule_item
+        .schedule_photo.schedule_pic
+          img(src="./assets/msk-shtefan.png")
+        .schedule_name Михаил Штефан
+        .schedule_who Технический специалист отдела внешних связей Intel
+        .schedule_theme Интернет вещей и как он изменит мир
+        .schedule-time 14:15
+      .schedule_item
+        .schedule_photo.schedule_pic
+          img(src="./assets/msk-muraviev.jpg")
+        .schedule_name Роман Муравьев
+        .schedule_who Top 3D Shop
+        .schedule_theme Основы аддитивных технологий
+        .schedule-time 15:00
+      .schedule_item
+        .schedule_photo.schedule_pic
+          img(src="./assets/msk-gershenzon.jpg")
+        .schedule_name Владимир Гершензон
+        .schedule_who Основатель Scanex
+        .schedule_theme Что такое инновационные геопортальные технологии и как они влияют на нашу жизнь?
+        .schedule-time 15:45
+
+      .schedule_item.hollow
+        .schedule_title Перерыв
+        .schedule-time.schedule-time_hollow 16:30
+
+      .schedule_item
+        .schedule_photo.schedule_pic
+          img(src="./assets/msk-trushkov.jpg")
+        .schedule_name Алексей Трушков
+        .schedule_who Head of Moscow Office в Playrix
+        .schedule_theme Профессии в игровой индустрии
+        .schedule-time 16:45
+      .schedule_item
+        .schedule_photo.schedule_pic
+          img(src="./assets/msk-kuzin.png")
+        .schedule_name Артур Кузин
+        .schedule_who Аналитик по компьютерному зрению в Avito
+        .schedule_theme Применение машинного обучения в автоматизации работы с изображениями и текстом
+        .schedule-time 17:30
+      .schedule_item
+        .schedule_photo.schedule_pic
+          img(src="./assets/msk-akim.jpg")
+        .schedule_name Аким Касабулатов
+        .schedule_who Разработчик и основатель студии MetalBear
+        .schedule_theme Как выпустить игру в 16 лет и попасть в топ App Store
+        .schedule-time 18:15
+
+    h2 Программа лекций второго потока
+    .schedule
+      .schedule_line
+      .schedule_item.hollow.auto
+        .schedule_title Блок лекций от Школы Новых Технологий
+        .schedule_who
+          | 45 минут лайфхаков от IT-предпринимателей со стажем на открытой лекции-интерактиве для школьников, которые только начинают искать свой путь в жизни.
+          br
+          br
+          | Какой он мир? Такой, как говорят учителя? Такой, про который рассказывают родители? Может тот, который смотрят по телевизору? Или тот, который представляешь ты?
+          br
+          | Ни одного из этих миров - нет. А тот, который есть - не ждёт тебя. Что делать сегодня, чтобы не оказаться под колёсами роботов? Что делать, чтобы научиться жить? Как выжить в мире, про который ничего не расскажут в школе, про который не знают родители, и которого нет в телевизоре.
+        .schedule-time 13:30
+      .schedule_item
+        .schedule_photo.schedule_pic
+          img(src="./assets/snt3.jpg")
+        .schedule_name Марко Бруни
+        .schedule_who Управляющий партнер разработчика 3D принтеров, робототехники и смартфонов - компании BQ
+        .schedule_theme 
+        .schedule-time 13:30
+      .schedule_item
+        .schedule_photo.schedule_pic
+          img(src="./assets/snt2.jpg")
+        .schedule_name Иван Булаев
+        .schedule_who Предприниматель с бэкграундом в ведущих ИТ корпорациях
+        .schedule_theme 
+        .schedule-time 13:55
+      .schedule_item
+        .schedule_photo.schedule_pic
+          img(src="./assets/snt1.jpg")
+        .schedule_name Анна Силаева
+        .schedule_who Куратор направления «Профориентация» городского проекта «Школа Новых Технологий»
+        .schedule_theme 
+        .schedule-time 14:10
+
+      .schedule_item.hollow
+        .schedule_title Перерыв
+        .schedule-time.schedule-time_hollow 14:30
+
+      .schedule_item
+        .schedule_logo.schedule_pic
+          img(src="./assets/logo-bazaar.png")
+        .schedule_who Казань, Москва, Ярославль, Петербург
+        .schedule_theme Битва стартапов
+        .schedule-time 16:00
+
+
+    h2 Программа лекций потока для родителей и учителей
+    .schedule
+      .schedule_item
+        .schedule_photo.schedule_pic
+          img(src="./assets/msk-pishnov.jpg")
+        .schedule_name Тимофей Пышнов
+        .schedule_who Разработчик мобильных приложений Рокетбанк
+        .schedule_theme Слабоумие и отвага: как сразу после школы устроиться в Рокетбанк?
+        .schedule-time 11:30
+
+      .schedule_item
+        .schedule_photo.schedule_pic
+          img(src="./assets/msk-semenova.jpg")
+        .schedule_name Наталья Семёнова
+        .schedule_who Президент локального отделения AIESEC в Москве
+        .schedule_theme Университет: инструкция по применению
+        .schedule-time 12:30
+      .schedule_item
+        .schedule_photo.schedule_pic
+          img(src="./assets/msk-jabbarov.jpg")
+        .schedule_name Тимур Жаббаров
+        .schedule_who Cо-автор методики «Пять шагов осознанного выбора», автор курса для родителей «Как поддержать подростка в выборе профессии»
+        .schedule_theme Как поддержать подростка в выборе профессии
+        .schedule-time 13:30
+
+      .schedule_item.hollow
+        .schedule_title Перерыв
+        .schedule-time.schedule-time_hollow 14:30
+
+      .schedule_item
+        .schedule_photo.schedule_pic
+          img(src="./assets/msk-butusov.jpg")
+        .schedule_name Антон Бутусов
+        .schedule_who Директор по продукту "Маркет Мела"
+        .schedule_theme Как сдать ЕГЭ: полезные онлайн-сервисы и лайфхаки
+        .schedule-time 15:00
+
+      .schedule_item
+        .schedule_photo.schedule_pic
+          img(src="./assets/msk-sozontov.jpg")
+        .schedule_name Илья Сазонтов
+        .schedule_who Сооснователь образовательного центра по подготовке к ЕГЭ "LUDI" 
+        .schedule_theme Как сдать ЕГЭ: полезные онлайн-сервисы и лайфхаки
+        .schedule-time 15:30
+
+      .schedule_item.hollow.auto
+        .schedule_title Круглый стол "Работать или учиться"
+        .schedule_who
+        .schedule-time 16:30
+      
+      .schedule_item
+        .schedule_photo.schedule_pic
+          img(src="./assets/msk-ticktarova.png")
+        .schedule_name Ирина Токтарова
+        .schedule_who Психолог, психотерапевт, специалист в области гештальт-терапии и транзактного анализа
+        .schedule_theme 
+      .schedule_item
+        .schedule_photo.schedule_pic
+          img(src="./assets/msk-davtyan.png")
+        .schedule_name Гоар Давтян  
+        .schedule_who Директор  Департамента Управление Персоналом– компания Оптэк (Carl Zeiss)
+        .schedule_theme 
+      .schedule_item
+        .schedule_photo.schedule_pic
+          img(src="./assets/msk-rodin.jpg")
+        .schedule_name Кирилл Родин
+        .schedule_who Маркетолог Рокетбанк
+        .schedule_theme 
+      .schedule_item
+        .schedule_photo.schedule_pic
+          img(src="./assets/msk-pishnov.jpg")
+        .schedule_name Тимофей Пышнов
+        .schedule_who Разработчик мобильных приложений Рокетбанк
+        .schedule_theme 
+      .schedule_item
+        .schedule_photo.schedule_pic
+          img(src="./assets/msk-uzunov.jpg")
+        .schedule_name Узунов Глеб Борисович
+        .schedule_who Председатель Объединенного совета обучающихся НИТУ "МИСиС"
+        .schedule_theme 
+      .schedule_item
+        .schedule_photo.schedule_pic
+          img(src="./assets/msk-evsukova.jpg")
+        .schedule_name Евсюкова Ирина Анатольевна
+        .schedule_who Директор офиса управления проектами НИТУ "МИСиС"
+        .schedule_theme 
+
+      .schedule_item
+        .schedule_photo.schedule_pic
+          img(src="./assets/msk-nenashev.jpg")
+        .schedule_name Александр Ненашев
+        .schedule_who Проектировщик систем развития организации PDUPD.CO
+        .schedule_theme Модератор круглого стола
+
+
+      .schedule_item.hollow
+        .schedule_title Окончание секции
+        .schedule-time.schedule-time_hollow 17:30
+
+      
+
+
+
+  .programm-holder
+    h2 Программа Мастер-классов. Зал 1
+    .schedule
+      .schedule_item.hollow
+        .schedule_title Начало мероприятия
+        .schedule-time 10:30
+
+      
+
+      .schedule_item
+        .schedule_logo.schedule_pic
+          img(src="./assets/logo-hm.png")
+        .schedule_theme Digital-реклама: любить нельзя игнорировать
+        .schedule_name Количество участников: 20 человек
+        .schedule_who 
+          | Реклама умерла. До здравствует реклама. Мастер-класс как машина времени перенесет слушателей в ближайшее будущее, когда не будет слова “реклама”, а будет только востребованный пользователями digital-контент брендов, созданный по законам индустрии развлечений – СМИ, шоу, кино, сериалов, театров и квеструмов.
+
+        
+        .schedule-time 11:00
+      .schedule_item
+        .schedule_logo.schedule_pic
+          img(src="./assets/msk-logo-zephyr.png")
+        .schedule_theme Игра "Digital рынок"
+        .schedule_name Количество участников: 20 человек
+        .schedule_who Под руководством основателя и арт-директора digital-агенства ZephyrLab Романа Квартальнова ребята пройдут через все этапы создания дизайн-концепции проекта и будут защищать свои идеи. Участники игры поделятся на четыре команды. У каждой группы будет свой проект и заказчик. 
+
+        .schedule-time 12:00
+
+      .schedule_item
+        .schedule_logo.schedule_pic
+          img(src="./assets/msk-logo-bitrix.png")
+        .schedule_theme Создание сайта - это не сложно
+        .schedule_name Количество участников: 30 человек
+        .schedule_who Создавать сайты действительно не сложно. А если при этом использовать самую распространенную в России CMS, то процесс превращается в увлекательный конструктор. Специалист по образованию 1С Битрикс расскажет, как пользоваться их сервисом, чтобы без особых навыков программирования создать свое представительство в интернете.
+        
+        .schedule-time 13:00
+      
+      .schedule_item
+        .schedule_logo.schedule_pic
+          img(src="./assets/logo-asus.png")
+        .schedule_theme Cобрать свой компьютер
+        .schedule_name Количество участников: 2 по 10 человек
+        .schedule_who Под руководством специалиста из ASUS 4 команды по 5 человек собирут полностью рабочий компьютер с нуля. Особенно полезным мастер-класс будет для тех, кто называет системный блок процессором. В конце участников ждут призы от ASUS.
+        
+        .schedule-time 14:30
+
+
+      .schedule_item
+        .schedule_logo.schedule_pic
+          img(src="./assets/msk-logo-numa.png")
+        .schedule_theme Как разработать идею стартапа
+        .schedule_name Количество участников: 20 человек
+        .schedule_who Сотрудники NUMA, первого международного акселератора и хаба в Москве, станут вашим проводником в мир инноваций — поделятся с участниками опытом и расскажут, как создать свой успешный продукт.
+        
+        .schedule-time 16:30
+
+
+    h2 Программа Мастер-классов. Зал 2
+    .schedule
+      .schedule_item.hollow
+        .schedule_title Начало мероприятия
+        .schedule-time 10:30
+
+      .schedule_item
+        .schedule_logo.schedule_pic
+          img(src="./assets/msk-logo-microsoft.png")
+        .schedule_theme Разработка чат-ботов
+        .schedule_name Количество участников: 20 человек
+        .schedule_who Чат боты стали одним из главных мировых трендов 2016 года. На мастер-классе ребята узнают, как создать своего чат-бота и добавить его в переписку с друзьями.
+        
+        .schedule-time 11:00
+
+      .schedule_item
+        .schedule_logo.schedule_pic
+          img(src="./assets/logo-hello.png")
+        .schedule_theme Phygital-игра из заставки к любимому мультсериалу и скотча
+        .schedule_name Количество участников: 20 человек
+        .schedule_who Синтез физических предметов и программных кодов позволяет менять подсветку домов с помощью дирижерской палочки и забивать голы одним только голосом.  Мы cовершим экспресс-погружение в невероятные phygital-технологии и вместе сделаем игру в Unity3d при помощи конструктора MakeyMakey. Шелдон Купер будет визжать от восторга! Самым смелым – сюрприз на грани фантастики :) 
+        
+        .schedule-time 12:30 
+
+      .schedule_item
+        .schedule_logo.schedule_pic
+          img(src="./assets/msk-logo-evtoolbox.png")
+        .schedule_theme Приручая дополненную реальность
+        .schedule_name Количество участников: 20 человек
+        .schedule_who В рамках мастер-класса участники узнают, что такое дополненная реальность на примерах различных проектов. Во второй части мастер-класса изучат интерфейс конструктора и его функциональные возможности, а также создадут несколько новых проектов дополненной реальности в EV Toolbox с нуля. 
+
+        
+        .schedule-time 14:00
+
+      .schedule_item
+        .schedule_logo.schedule_pic
+          img(src="./assets/msk-logo-intel.png")
+        .schedule_theme Машинное обучение для специалиста будущего
+        .schedule_name Количество участников: 20 человек
+        .schedule_who На мастер-классе участникам понятным языком расскажут про машинное обучение при помощи нейронных сетей, продемонстрируют как решаются простейшие задачи распознавания и покажут примеры того как подобные технологии влияют на технологический мир уже сегодня.
+        
+        .schedule-time 16:00
+
+      .schedule_item
+        .schedule_logo.schedule_pic
+          img(src="./assets/msk-logo-creative.png")
+        .schedule_theme Профессия веб-дизайнер
+        .schedule_name Количество участников: 20 человек
+        .schedule_who 
+          | На мастер-классе расскажут о современном процессе создания веб-сайтов, о том как формируется команда проекта, из каких специалистов она состоит, и можно ли сделать современный веб-сайт в одиночку. 
+          br
+          | Научат самому важному в веб-дизайне. Чему именно? Узнаете на месте. 
+          be 
+          | Мастер-класс ведет Сергей Прокофьев, исполнительный директор и совладелец креативного агентства CreativePeople. Ассистирует Александр Прокофьев, pr-менеджер креативного агентства.
+        
+        .schedule-time 17:30
+
+    h2 
+      | Программа Мастер-классов 
+      br
+      | на стендах
+    .schedule
+
+      .schedule_item.last
+        .schedule_logo.schedule_pic
+          img(src="./assets/logo-krok.png")
+        .schedule_theme Системная интеграция на практике
+        .schedule_name Количество участников: каждый час по 8 человек
+        .schedule_who Интерактивный семинар, на котором участники вместе с отраслевыми экспертами компании в игровом формате разберут, кто такие системные интеграторы сегодня и как с ними работать?
+        
+        .schedule-time-list
+          .schedule-time 11:00
+          .schedule-time 12:00
+          .schedule-time 13:00
+          .schedule-time 14:00
+
+  .programm-holder
+    h2 Участники выставки
+    
+    .participants
+      .participants-row
+        a(target="_blank" href="https://www.asus.com/ru/")
+          img(src="../assets/logo-asus.png")
+        a(target="_blank" href="https://clevver.me")  
+          img(src="../assets/msk-logo-castle.svg")
+        a(target="_blank" href="http://hpmd.ru/")  
+          img(src="../assets/logo-hm.png")
+
+        a(target="_blank" href="http://top3dshop.ru")
+          img(src="./assets/logo-topshop.png")
+        
+        
+        a(target="_blank" href="http://bazaar.business")  
+          img(src="../assets/logo-bazaar.png") 
+      .participants-row
+        a(target="_blank" href="https://www.esetnod32.ru")
+          img(src="../assets/msk-logo-eset.png")
+        a(target="_blank" href="http://fablab77.ru")  
+          img(src="../assets/fablab-logo.png" width="100px")
+        a(target="_blank" href="http://www.cognitive.ru")  
+          img(src="../assets/logo-ef.png")
+        a(target="_blank" href="http://www.ef.ru")  
+          img(src="../assets/avito-logo.png")
+        a(target="_blank" href="http://harbordigital.pro")  
+          img(src="../assets/logo-harbour.png")
+      .participants-row
+        a(target="_blank" href="https://www.abbyy.com/ru-ru/")
+          img(src="../assets/logo-abbyy.svg")
+        a(target="_blank" href="http://misis.ru/about-university/struktura-universiteta/upravlenij-i-centry/careercentr")  
+          img(src="../assets/msk-logo-nitu-misis.svg") 
+        a(target="_blank" href="http://rockabit.ru")  
+          img(src="../assets/msk-logo-rockabit.png") 
+        a(target="_blank" href="http://evtoolbox.ru")  
+          img(src="../assets/msk-logo-evtoolbox.png") 
+        a(target="_blank" href="http://aiesec.ru")  
+          img(src="../assets/logo-aiesec.png") 
+
+      .participants-row
+        a(target="_blank" href="http://abiturient.ru").small  
+          img(src="../assets/logo-abiturient.png")
+        a(target="_blank" href="http://zephyrlab.ru/home").small  
+          img(src="../assets/msk-logo-zephyr.png") 
+        a(target="_blank" href="vk.com/overjump_game").small  
+          img(src="../assets/logo-overjump.png") 
+        a(target="_blank" href="http://www.croc.ru")  
+          img(src="../assets/logo-krok.png") 
+        a(target="_blank" href="http://mel.fm")  
+          img(src="../assets/logo-mel.png") 
+
+      .participants-row
+        a(target="_blank" href="http://mti.edu.ru")  
+          img(src="../assets/logo-mti.png") 
+        a(target="_blank" href="http://virtualnyeochki.ru")
+          img(src="../assets/logo-glasses.png")
+
+        a(target="_blank" href="http://armaturgames.com")
+          img(src="../assets/logo-armatour.png")
+        a(target="_blank" href="https://drp.su/ru")
+          img(src="../assets/logo-driver.png")
+        a(target="_blank" href="http://hello.io")
+          img(src="../assets/logo-hello.png")
+
+      .participants-row
+        a(target="_blank" href="https://moscow.numa.co")
+          img(src="../assets/msk-logo-numa.png")
+        a(target="_blank" href="https://www.bq.com/ru/")
+          img(src="../assets/logo-bq.png")
+
+        a(target="_blank" href="http://partnergram.ru")
+          img(src="../assets/logo-iso.png")
+        a(target="_blank" href="https://qrepublik.ru")
+          img(src="../assets/logo-qr.png")
+        a(target="_blank" href="http://www.bitronicslab.com")
+          img(src="../assets/logo-bitronics.png")
+        
+        //- a(target="_blank" href="https://htmlacademy.ru/")  
+        //-   img(src="../assets/logo-academy.png")
+
+
+block lfk
+  .partners
+    .partners-row
+      .partner.org
+        h2 Организатор мероприятия
+        a.partner-logo(href="http://digital-banana.ru/")
+          img(src="./assets/logo-banana-main.png")
+        
+    .partners-row
+      h2 Партнёры в Москве
+
+      .partner.main
+        a.partner-logo(href="http://rybakovfond.ru")
+          img(src="./assets/msk-logo-fish.png")
+        .partner-title Официальный партнёр
+
+      .partner.main
+        a.partner-logo(href="http://top3dshop.ru")
+          img(src="./assets/logo-topshop.png")
+        .partner-title Официальный партнёр
+
+      .partner.main
+        a.partner-logo(href="https://www.asus.com/ru/")
+          img(src="./assets/logo-asus.png")
+        .partner-title Официальный партнёр
+
+
+      .partner.main
+        a.partner-logo(href="http://misis.ru")
+          img(src="./assets/msk-logo-misis.png")
+        .partner-title Организационный партнёр
+
+      .partner.main
+        a.partner-logo(href="http://www.ef.ru")
+          img(src="./assets/logo-ef.png")
+        .partner-title Эксклюзивный партнёр
+
+    .partners-row
+      h2 Информационные партнёры
+
+      .partner.main
+        a.partner-logo(href="http://mel.fm")
+          img(src="./assets/logo-mel.png")
+        .partner-title Генеральный инфопартнёр
+
+      .partner.main
+        a.partner-logo(href="http://kudago.com/msk/")
+          img(src="./assets/logo-kudago.png")
+        .partner-title Продвижение в интернете
+
+    .partners-row.little
+
+      .partner
+        a.partner-logo(href="http://timepad.ru")
+          img(src="./assets/logo-timepad.png")
+
+      .partner
+        a.partner-logo(href="http://aiesec.ru")
+          img(src="./assets/logo-aiesec.png")
+
+      .partner
+        a.partner-logo(href="http://snt.mos.ru")
+          img(src="./assets/msk-logo-shnt.png")
+
+      .partner
+        a.partner-logo(href="https://dnevnik.ru")
+          img(src="./assets/logo-diary.png")
+
+      .partner
+        a.partner-logo(href="http://amoskva.com")
+          img(src="./assets/logo-amsk.png")
+
+    .partners-row.little
+
+      .partner
+        a.partner-logo(href="http://www.physcareer.ru")
+          img(src="./assets/logo- physcareer.jpg")
+
+      .partner
+        a.partner-logo(href="http://afishakids.ru")
+          img(src="./assets/logo-afishakids.png")
+
+      .partner
+        a.partner-logo(href="https://career.ru")
+          img(src="./assets/msk-logo-career.png")
+
+      .partner
+        a.partner-logo(href="http://aiesec.ru/breakpoint/")
+          img(src="./assets/logo-breakpoint.png")
+
+      .partner.edusmi
+        a.partner-logo(href="http://edusmi.ru")
+          img(src="./assets/vodyanoy_znak.png")
+
+    .partners-row.little
+
+      .partner.edusmi
+        a.partner-logo(href="http://www.profyrost.ru")
+          img(src="./assets/logo-forum.png")
+
+      .partner.edusmi
+        a.partner-logo(href="https://incamp.ru")
+          img(src="./assets/logo-incamp.png")
+
+      .partner
+        a.partner-logo(href="http://ladiescode.ru")
+          img(src="./assets/logo-ladies-code.png")
+
+      .partner
+        a.partner-logo(href="http://apps4all.ru")
+          img(src="./assets/logo-apps4all.png")
+
+      .partner.edusmi
+        a.partner-logo(href="http://edurobots.ru")
+          img(src="./assets/logo-robots.png")
+
+
+    .partners-row.little
+
+      .partner
+        a.partner-logo(href="https://www.ucheba.ru")
+          img(src="./assets/logo-ycheba.png")
+
+      .partner
+        a.partner-logo(href="http://itmozg.ru")
+          img(src="./assets/logo-itmozg.png")
+
+      .partner
+        a.partner-logo(href="https://moscow.numa.co")
+          img(src="./assets/msk-logo-numa.png")
+
+      .partner
+        a.partner-logo(href="https://www.rabota.ru")
+          img(src="./assets/logo-rabota.png")
+
+      .partner
+        a.partner-logo(href="http://www.igromania.ru")
+          img(src="./assets/logo-mania.png")
+
+    .partners-row
+
+      .partner
+        a.partner-logo(href="http://hotwork.ru")
+          img(src="./assets/logo-hotwork.png")
+      
+      .partner
+        a.partner-logo(href="http://vodovoz.ru")
+          img(src="./assets/logo-vodovoz.png")
+
+      .partner
+        a.partner-logo(href="http://buduguru.org")
+          img(src="./assets/logo-buduguru.png")
+
+      //- .partner
+      //-   a.partner-logo(href="https://www.rabota.ru")
+      //-     img(src="./assets/logo-rabota.png")
+
+      //- .partner
+      //-   a.partner-logo(href="http://www.igromania.ru")
+      //-     img(src="./assets/logo-mania.png")
+
+
+
+      
+
+      
